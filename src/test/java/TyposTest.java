@@ -1,16 +1,13 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
-public class Inputs extends BaseSetUp{
-   /* Проверить на возможность ввести различные цифровые и нецифровые значения, используя Keys.ARROW_UP  И Keys.ARROW_DOWN
-    */
+public class TyposTest extends BaseSetUp{
+   /* Проверить соответствие параграфа орфографии  */
 
     @Test
     public void verifyValuesCanBeSelectedByArrowUp() {
@@ -43,12 +40,10 @@ public class Inputs extends BaseSetUp{
     }
 
     @Test
-    public void verifyDigitsCanBeEnteredFromKeyboard() {
-        driver.get("http://the-internet.herokuapp.com/inputs");
-        WebElement input = driver.findElement(By.tagName("input"));
-        input.sendKeys(Keys.CONTROL);
-        input.sendKeys("10");
-        String displayedValue = input.getAttribute("value");
-        Assert.assertEquals(displayedValue, "10");
+    public void verifyTypoInParagrath() {
+        driver.get("http://the-internet.herokuapp.com/typos");
+        List<WebElement> paragrath = driver.findElements(By.tagName("p"));
+        String stringToCheck = paragrath.get(1).getText();
+        Assert.assertTrue(stringToCheck.contains("won't"));
     }
 }

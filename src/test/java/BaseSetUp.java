@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseSetUp {
 
-    public WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeClass
     public void startBrowser(){

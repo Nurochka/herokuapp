@@ -1,15 +1,12 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import java.time.Duration;
 import java.util.List;
 
-public class Hover extends BaseSetUp {
+public class HoverTest extends BaseSetUp {
     /* Сделать цепочку из действий: наведение на профиль, проверка имени, клик по ссылке, проверка что нет 404 ошибки. Повторить для каждого из профилей. Использовать класс Actions  */
 
     @Test
