@@ -2,8 +2,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddRemoveElementsTest extends BaseSetUp{
-   /* добавить 2 элемента, удалить элемент, проверить количество элементов  */
+public class AddRemoveElementsTest extends BaseSetUp {
+    /* добавить 2 элемента, удалить элемент, проверить количество элементов  */
 
     @Test
     public void verifyNumberOfElementsAfterDeleting() {

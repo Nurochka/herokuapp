@@ -3,9 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckboxesTest extends BaseSetUp{
-   /* проверить, что первый чекбокс unchecked, отметить первый чекбокс, проверить что он checked. Проверить, что второй чекбокс checked, сделать unheck, проверить, что он unchecked
-    */
+public class CheckboxesTest extends BaseSetUp {
+    /* проверить, что первый чекбокс unchecked, отметить первый чекбокс, проверить что он checked. Проверить, что второй чекбокс checked, сделать unheck, проверить, что он unchecked
+     */
 
     @Test
     public void verifyFirstCheckboxIsUncheckedByDefault() {
